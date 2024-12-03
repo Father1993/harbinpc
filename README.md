@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HarbinPC
 
-## Getting Started
+Интернет-магазин компьютерных комплектующих с доставкой из Китая. Офисы в Харбине и Суньфэньхэ, логистический склад в Уссурийске.
 
-First, run the development server:
+## Технологии
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Next.js 15+
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Next-themes
+- Radix UI
+- Vercel Analytics
+- Zod
+- React Hook Form
+- Zustand
+
+## Особенности
+
+- Современный адаптивный дизайн
+- Темная/светлая тема
+- SEO оптимизация
+- Анимации и переходы
+- Конфигуратор ПК
+- Система заказов
+- Административная панель
+- Оптимизированная производительность
+- Аналитика и метрики
+
+## Установка
+
+1. Клонируйте репозиторий:
+
+   ```bash
+   git clone https://github.com/your-username/harbinpc.git
+   ```
+
+2. Установите зависимости:
+
+   ```bash
+   cd harbinpc
+   npm install
+   ```
+
+3. Создайте файл .env и заполните необходимые переменные окружения:
+
+   ```env
+   # Аналитика
+   NEXT_PUBLIC_ANALYTICS_ID=""
+
+   # API ключи
+   NEXT_PUBLIC_API_URL=""
+   ```
+
+4. Запустите проект:
+   ```bash
+   npm run dev
+   ```
+
+## Структура проекта
+
+```
+harbinpc/
+├── app/
+│   ├── components/
+│   │   ├── ui/
+│   │   ├── layout/
+│   │   ├── sections/
+│   │   └── providers/
+│   ├── lib/
+│   ├── hooks/
+│   ├── types/
+│   └── styles/
+├── public/
+│   ├── images/
+│   └── icons/
+└── config/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Разработка
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Линтинг:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+  ```bash
+  npm run lint
+  ```
 
-## Learn More
+- Форматирование кода:
+  ```bash
+  npm run format
+  ```
 
-To learn more about Next.js, take a look at the following resources:
+## Деплой
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Создайте аккаунт на Vercel
+2. Подключите репозиторий
+3. Настройте переменные окружения
+4. Выполните деплой:
+   ```bash
+   npm run build
+   vercel deploy
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Лицензия
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
