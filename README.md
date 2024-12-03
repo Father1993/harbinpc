@@ -71,7 +71,7 @@
 harbinpc/
 ├── app/
 │   ├── components/
-��   │   ├── ui/
+│   │   ├── ui/
 │   │   ├── layout/
 │   │   ├── sections/
 │   │   └── providers/
