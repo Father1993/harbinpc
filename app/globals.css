@@ -2,6 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 md:px-6 xl:px-8 2xl:px-10;
+    max-width: 100%;
+  }
+
+  @screen md {
+    .container-custom {
+      max-width: 768px;
+    }
+  }
+
+  @screen lg {
+    .container-custom {
+      max-width: 1024px;
+    }
+  }
+
+  @screen xl {
+    .container-custom {
+      max-width: 1280px;
+    }
+  }
+
+  @screen 2xl {
+    .container-custom {
+      max-width: 1920px;
+    }
+  }
+
+  .heading-1 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+  }
+
+  .heading-2 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -73,4 +120,12 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.floating-element {
+  filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.5));
 }

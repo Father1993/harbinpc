@@ -6,12 +6,14 @@ import Contact from './components/sections/contact'
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between'>
+    <main className='flex min-h-screen flex-col items-center justify-between w-full'>
       <Hero />
-      <Features />
-      <Products />
-      <About />
-      <Contact />
+      <div className='container-custom w-full'>
+        <Features />
+        <Products />
+        <About />
+        <Contact />
+      </div>
     </main>
   )
 }
